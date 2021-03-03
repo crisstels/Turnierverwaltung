@@ -23,6 +23,16 @@ namespace Turnierverwaltung.Model
             Sportart = "Fussball";
             Erfahrung = 0;
         }
+
+        public Trainer(string name, string rolle, string sportart, int erfahrung) : base(name, "Trainer")
+        {
+            Sportart = sportart;
+            Erfahrung = erfahrung;
+        }
+        #endregion
+
+        #region Worker
+        public void trainieren() { }
         #endregion
     }
 }

@@ -22,7 +22,7 @@ namespace Turnierverwaltung
 
         public Organisator()
         {
-            .AnzahlTurniere = 0;
+            AnzahlTurniere = 0;
         }
 
         public Organisator(int anzahlTurniere)

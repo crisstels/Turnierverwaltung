@@ -29,8 +29,8 @@ namespace Turnierverwaltung
 
         public Spieler()
         {
-            Position = _position;
-            Spielernummer = _spielernummer;
+            Position = " ";
+            Spielernummer = 0;
         }
 
         public Spieler(int spielernummer, string position)

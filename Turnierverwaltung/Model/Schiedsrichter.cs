@@ -22,7 +22,7 @@ namespace Turnierverwaltung
 
         public Schiedsrichter()
         {
-            this._sportart = _sportart;
+            Sportart = " ";
         }
 
         public Schiedsrichter(string sportart)
