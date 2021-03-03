@@ -31,7 +31,7 @@ namespace Turnierverwaltung
             _mitglieder = mitglieder;
         }
 
-        public Mannschaft(string name, string rolle, List<Teilnehmer> mitglieder) : base(name, rolle)
+        public Mannschaft(string name, string rolle, List<Teilnehmer> mitglieder) : base(name, "Mannschaft")
         {
             _name = name;
             _mitglieder = mitglieder;

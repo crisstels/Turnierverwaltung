@@ -24,8 +24,8 @@ namespace Turnierverwaltung
         
         public Teilnehmer()
         {
-            this.Name = Name;
-            this.Rolle = Rolle;
+            Name = " ";
+            Rolle = " ";
         }
 
         public Teilnehmer(string name, string rolle)

@@ -22,7 +22,7 @@ namespace Turnierverwaltung
 
         public Organisator()
         {
-            this._anzahlTurniere = _anzahlTurniere;
+            .AnzahlTurniere = 0;
         }
 
         public Organisator(int anzahlTurniere)
@@ -30,7 +30,7 @@ namespace Turnierverwaltung
             _anzahlTurniere = anzahlTurniere;
         }
 
-        public Organisator(string name, string rolle, int anzahlTurniere) : base(name, rolle)
+        public Organisator(string name, string rolle, int anzahlTurniere) : base(name, "Organisator")
         {
             _anzahlTurniere = anzahlTurniere;
         }

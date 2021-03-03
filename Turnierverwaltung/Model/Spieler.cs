@@ -1,6 +1,6 @@
 namespace Turnierverwaltung
 {
-    public class Fußballspieler : Teilnehmer
+    public class Spieler : Teilnehmer
     {
         #region Properties
 
@@ -11,7 +11,7 @@ namespace Turnierverwaltung
 
         #region Accessors/Modifiers
 
-        public int Spielnummer
+        public int Spielernummer
         {
             get => _spielernummer;
             set => _spielernummer = value;
@@ -27,19 +27,19 @@ namespace Turnierverwaltung
 
         #region Constructor
 
-        public Fußballspieler()
+        public Spieler()
         {
-            this._position = _position;
-            this._spielernummer = _spielernummer;
+            Position = _position;
+            Spielernummer = _spielernummer;
         }
 
-        public Fußballspieler(int spielernummer, string position)
+        public Spieler(int spielernummer, string position)
         {
             _spielernummer = spielernummer;
             _position = position;
         }
 
-        public Fußballspieler(string name, string rolle, int spielernummer, string position) : base(name, rolle)
+        public Spieler(string name, string rolle, int spielernummer, string position) : base(name, rolle)
         {
             _spielernummer = spielernummer;
             _position = position;
