@@ -27,14 +27,14 @@ namespace Turnierverwaltung
 
         public Mannschaft(string name, List<Teilnehmer> mitglieder)
         {
-            _name = name;
-            _mitglieder = mitglieder;
+            Name = name;
+            Mitglieder = mitglieder;
         }
 
-        public Mannschaft(string name, string rolle, List<Teilnehmer> mitglieder) : base(name, "Mannschaft")
+        public Mannschaft(string name, string rolle, int nummer, List<Teilnehmer> mitglieder) : base(name, "Mannschaft", nummer)
         {
-            _name = name;
-            _mitglieder = mitglieder;
+            Name = name;
+            Mitglieder = mitglieder;
         }
 
         #endregion

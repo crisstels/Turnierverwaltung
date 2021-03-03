@@ -27,12 +27,12 @@ namespace Turnierverwaltung
 
         public Schiedsrichter(string sportart)
         {
-            _sportart = sportart;
+            Sportart = sportart;
         }
 
-        public Schiedsrichter(string name, string rolle, string sportart) : base(name, rolle)
+        public Schiedsrichter(string name, string rolle, int nummer, string sportart) : base(name, rolle, nummer)
         {
-            _sportart = sportart;
+            Sportart = sportart;
         }
 
         #endregion

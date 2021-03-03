@@ -5,6 +5,7 @@ namespace Turnierverwaltung
         #region Properties
         private string _name;
         private string _rolle;
+        private int _nummer;
         #endregion
 
         #region Accessors/Modifiers
@@ -19,19 +20,21 @@ namespace Turnierverwaltung
             get => _rolle;
             set => _rolle = value;
         }
+        public int Nummer { get => _nummer; set => _nummer = value; }
         #endregion
         #region Constructor
-        
+
         public Teilnehmer()
         {
             Name = " ";
             Rolle = " ";
         }
 
-        public Teilnehmer(string name, string rolle)
+        public Teilnehmer(string name, string rolle, int nummer)
         {
-            _name = name;
-            _rolle = rolle;
+            Name = name;
+            Rolle = rolle;
+            Nummer = nummer;
         }
         #endregion
         #region Worker

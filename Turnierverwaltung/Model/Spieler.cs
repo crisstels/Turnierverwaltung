@@ -35,14 +35,14 @@ namespace Turnierverwaltung
 
         public Spieler(int spielernummer, string position)
         {
-            _spielernummer = spielernummer;
-            _position = position;
+            Spielernummer = spielernummer;
+            Position = position;
         }
 
-        public Spieler(string name, string rolle, int spielernummer, string position) : base(name, rolle)
+        public Spieler(string name, string rolle, int nummer, int spielernummer, string position) : base(name, rolle, nummer)
         {
-            _spielernummer = spielernummer;
-            _position = position;
+            Spielernummer = spielernummer;
+            Position = position;
         }
 
         #endregion

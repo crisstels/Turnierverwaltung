@@ -24,7 +24,7 @@ namespace Turnierverwaltung.Model
             Erfahrung = 0;
         }
 
-        public Trainer(string name, string rolle, string sportart, int erfahrung) : base(name, "Trainer")
+        public Trainer(string name, string rolle, int nummer, string sportart, int erfahrung) : base(name, "Trainer", nummer)
         {
             Sportart = sportart;
             Erfahrung = erfahrung;

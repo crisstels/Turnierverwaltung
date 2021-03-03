@@ -27,12 +27,12 @@ namespace Turnierverwaltung
 
         public Organisator(int anzahlTurniere)
         {
-            _anzahlTurniere = anzahlTurniere;
+            AnzahlTurniere = anzahlTurniere;
         }
 
-        public Organisator(string name, string rolle, int anzahlTurniere) : base(name, "Organisator")
+        public Organisator(string name, string rolle, int nummer, int anzahlTurniere) : base(name, "Organisator", nummer)
         {
-            _anzahlTurniere = anzahlTurniere;
+            AnzahlTurniere = anzahlTurniere;
         }
 
         #endregion
