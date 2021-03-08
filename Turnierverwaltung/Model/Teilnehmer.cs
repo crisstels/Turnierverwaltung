@@ -1,3 +1,5 @@
+using MySql.Data.MySqlClient;
+
 namespace Turnierverwaltung
 {
     public class Teilnehmer

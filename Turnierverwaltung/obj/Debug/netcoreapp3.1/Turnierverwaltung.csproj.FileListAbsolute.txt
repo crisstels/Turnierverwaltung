@@ -1,0 +1,4 @@
+D:\Users\NatalieHasselmann\Documents\2.Lehrjahr\AWE\Turnierverwaltung\Turnierverwaltung\bin\Debug\netcoreapp3.1\Turnierverwaltung.exe
+D:\Users\NatalieHasselmann\Documents\2.Lehrjahr\AWE\Turnierverwaltung\Turnierverwaltung\obj\Debug\netcoreapp3.1\Turnierverwaltung.csprojAssemblyReference.cache
+D:\Users\NatalieHasselmann\Documents\2.Lehrjahr\AWE\Turnierverwaltung\Turnierverwaltung\obj\Debug\netcoreapp3.1\Turnierverwaltung.AssemblyInfoInputs.cache
+D:\Users\NatalieHasselmann\Documents\2.Lehrjahr\AWE\Turnierverwaltung\Turnierverwaltung\obj\Debug\netcoreapp3.1\Turnierverwaltung.AssemblyInfo.cs
