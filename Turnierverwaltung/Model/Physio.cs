@@ -5,7 +5,7 @@ using System.Web;
 using System.Data.SQLite;
 
 
-namespace Turnierverwaltung.Model
+namespace Turnierverwaltung
 {
     class Physio : Teilnehmer
     {
