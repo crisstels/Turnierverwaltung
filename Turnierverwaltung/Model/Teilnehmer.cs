@@ -6,7 +6,7 @@ using System.Data.SQLite;
 
 namespace Turnierverwaltung
 {
-    public class Teilnehmer
+    public abstract class Teilnehmer
     {
         #region Properties
         private string _name;
@@ -47,6 +47,7 @@ namespace Turnierverwaltung
 
         public void anmelden(){}
 
+        public abstract void InsertData();
         #endregion
 
     }
