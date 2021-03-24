@@ -36,7 +36,7 @@ namespace Turnierverwaltung
             Mitglieder = mitglieder;
         }
 
-        public Mannschaft(string name, string rolle, int nummer, List<Teilnehmer> mitglieder) : base(name, "Mannschaft", nummer)
+        public Mannschaft(string name, string vorname, string rolle, int nummer, List<Teilnehmer> mitglieder) : base(name, vorname, "Mannschaft", nummer)
         {
             Name = name;
             Mitglieder = mitglieder;
@@ -48,6 +48,11 @@ namespace Turnierverwaltung
 
         public void neuesMitgliedHnzufuegen(){}
         public void MitgliedEntfernen(){}
+
+        public override void DatenSpeichern()
+        {
+            throw new NotImplementedException();
+        }
 
         #endregion
     }

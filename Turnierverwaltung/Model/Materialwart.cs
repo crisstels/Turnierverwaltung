@@ -23,7 +23,7 @@ namespace Turnierverwaltung
             Material = " ";
         }
 
-        public Materialwart(string material, string name, string rolle, int nummer) : base(name, rolle, nummer)
+        public Materialwart(string material, string name, string vorname, string rolle, int nummer) : base(name, vorname, rolle, nummer)
         {
             Material = material;
         }
@@ -33,6 +33,11 @@ namespace Turnierverwaltung
         public void MaterialAusgeben()
         {
             Console.WriteLine("{0} wurde ausgegeben.", Material);
+        }
+
+        public override void DatenSpeichern()
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

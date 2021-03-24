@@ -10,6 +10,7 @@ namespace Turnierverwaltung
     {
         #region Properties
         private string _name;
+        private string _vorname;
         private string _rolle;
         private int _nummer;
         #endregion
@@ -27,6 +28,7 @@ namespace Turnierverwaltung
             set => _rolle = value;
         }
         public int Nummer { get => _nummer; set => _nummer = value; }
+        public string Vorname { get => _vorname; set => _vorname = value; }
         #endregion
         #region Constructor
 
@@ -36,18 +38,19 @@ namespace Turnierverwaltung
             Rolle = " ";
         }
 
-        public Teilnehmer(string name, string rolle, int nummer)
+        public Teilnehmer(string name, string vorname, string rolle, int nummer)
         {
             Name = name;
             Rolle = rolle;
             Nummer = nummer;
+            Vorname = vorname;
         }
         #endregion
         #region Worker
 
         public void anmelden(){}
 
-        public abstract void InsertData();
+        public abstract void DatenSpeichern();
         #endregion
 
     }

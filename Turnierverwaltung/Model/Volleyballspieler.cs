@@ -45,7 +45,7 @@ namespace Turnierverwaltung
             Position = position;
         }
 
-        public Volleyballspieler(string name, string rolle, int nummer, int spielernummer, string position) : base(name, rolle, nummer)
+        public Volleyballspieler(string name, string vorname, string rolle, int nummer, int spielernummer, string position) : base(name, vorname, rolle, nummer)
         {
             Spielernummer = spielernummer;
             Position = position;
@@ -57,7 +57,7 @@ namespace Turnierverwaltung
 
         public void BallPassen(){}
 
-        public override void InsertData()
+        public override void DatenSpeichern()
         {
             string DatabasePath = "D:/Users/NatalieHasselmann/Documents/2.Lehrjahr/AWE/TurnierDatenbank/turnier.db";
             string connectionString = "Data Source=" + DatabasePath + ";Version=3;";
@@ -77,11 +77,8 @@ namespace Turnierverwaltung
             }
 
             // speichert zuerst die Daten in die Teilnehmertabelle
-            int nummer = Nummer;
-            string name = Name;
-            string rolle = Rolle;
 
-            string insertTeilnehmer = "insert into Teilnehmer values('" + nummer + "', '" + rolle + "', '" + name + "');";
+            string insertTeilnehmer = "insert into Teilnehmer values('" + Nummer + "', '" + Rolle + "', '" + Name + "', '" + Vorname + "');";
             SQLiteCommand command = new SQLiteCommand(insertTeilnehmer, Connection);
 
             try
@@ -100,16 +97,13 @@ namespace Turnierverwaltung
 
             // speichert nun die Daten in die Spielertabelle
 
-            int Trikotnummer = Spielernummer;
-            string position = Position;
-
-            string insertSpieler = "insert into Teilnehmer values('" + Trikotnummer + "', '" + position + "', '" + nummer + "');";
+            string insertSpieler = "insert into Volleyballspieler values('" + Spielernummer + "', '" + Position + "', '" + Nummer + "');";
             SQLiteCommand command1 = new SQLiteCommand(insertSpieler, Connection);
             anzahl = -1;
 
             try
             {
-                anzahl = command.ExecuteNonQuery();
+                anzahl = command1.ExecuteNonQuery();
             }
             catch (Exception e)
             {
@@ -120,6 +114,9 @@ namespace Turnierverwaltung
             {
                 Console.WriteLine(anzahl);
             }
+
+            // Close connection
+            Connection.Close();
 
         }
 
