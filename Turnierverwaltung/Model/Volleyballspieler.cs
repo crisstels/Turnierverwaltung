@@ -78,7 +78,7 @@ namespace Turnierverwaltung
 
             // speichert zuerst die Daten in die Teilnehmertabelle
 
-            string insertTeilnehmer = "insert into Teilnehmer values('" + Nummer + "', '" + Rolle + "', '" + Name + "', '" + Vorname + "');";
+            string insertTeilnehmer = "insert into Teilnehmer (rolle, name, vorname) values('" + Rolle + "', '" + Name + "', '" + Vorname + "');";
             SQLiteCommand command = new SQLiteCommand(insertTeilnehmer, Connection);
 
             try
@@ -97,7 +97,7 @@ namespace Turnierverwaltung
 
             // speichert nun die Daten in die Spielertabelle
 
-            string insertSpieler = "insert into Volleyballspieler values('" + Spielernummer + "', '" + Position + "', '" + Nummer + "');";
+            string insertSpieler = "insert into Volleyballspieler (Trikotnummer, Position) values('" + Spielernummer + "', '" + Position + "');";
             SQLiteCommand command1 = new SQLiteCommand(insertSpieler, Connection);
             anzahl = -1;
 
